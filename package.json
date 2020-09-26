@@ -50,58 +50,75 @@
 				"title": "Change to cRaZy CaSe"
 			}
 		],
+		"keybindings":[
+			{
+				"command":"casechanger.cRaZyCaSe",
+				"when": "editorHasSelection",
+				"key":"ctrl+shift+f15"
+			},
+			{
+				"command":"casechanger.PascalCase",
+				"when": "editorHasSelection",
+				"key":"ctrl+alt+c"
+			}
+		],
 		"menus": {
 			"commandPalette": [
 				{
-				  "command": "casechanger.camelCase",
-				  "when": "editorHasSelection"
+					"command": "casechanger.camelCase",
+					"when": "editorHasSelection",
+					"group": "CaseChanger"
 				},
 				{
 					"command": "casechanger.PascalCase",
-					"when": "editorHasSelection"
+					"when": "editorHasSelection",
+					"group": "CaseChanger"
 				},
 				{
 					"command": "casechanger.snake_case",
 					"alt": "casechanger.SCREAMING_SNAKE_CASE",
-					"when": "editorHasSelection"
+					"when": "editorHasSelection",
+					"group": "CaseChanger"
 				},
 				{
 					"command": "casechanger.train-case",
 					"alt": "casechanger.SCREAMING-TRAIN-CASE",
-					"when": "editorHasSelection"
+					"when": "editorHasSelection",
+					"group": "CaseChanger"
 				},
 				{
 					"command": "casechanger.cRaZyCaSe",
-					"when": "editorHasSelection"
+					"when": "editorHasSelection",
+					"group": "CaseChanger"
 				}
 			],
 			"editor/context": [
 				{
 					"command": "casechanger.camelCase",
 					"when": "editorHasSelection",
-					"group": "CaseChange@1"
+					"group": "CaseChanger@1"
 				},
 				{
 					"command": "casechanger.PascalCase",
 					"when": "editorHasSelection",
-					"group": "CaseChange@2"
+					"group": "CaseChanger@2"
 				},
 				{
 					"command": "casechanger.snake_case",
 					"alt": "casechanger.SCREAMING_SNAKE_CASE",
 					"when": "editorHasSelection",
-					"group": "CaseChange@3"
+					"group": "CaseChanger@3"
 				},
 				{
 					"command": "casechanger.train-case",
 					"alt": "casechanger.SCREAMING-TRAIN-CASE",
 					"when": "editorHasSelection",
-					"group": "CaseChange@4"
+					"group": "CaseChanger@4"
 				},
 				{
 					"command": "casechanger.cRaZyCaSe",
 					"when": "editorHasSelection",
-					"group": "CaseChange@5"
+					"group": "CaseChanger@5"
 				}
 			]
 		}
