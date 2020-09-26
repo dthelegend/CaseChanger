@@ -1,7 +1,16 @@
 {
 	"name": "casechanger",
 	"displayName": "CaseChanger",
+	"publisher":"daudiwampamba",
+	"author": {
+		"name": "Daudi Wampamba",
+		"email": "wampamba.daudi@gmail.com"
+	},
 	"description": "It changes the case of selected text to a different case.",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/dthelegend/CaseChanger/tree/master"
+	},
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.49.0"
