@@ -10,16 +10,25 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:casechanger.helloWorld"
+		"onCommand:casechanger.ChangeCase"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "casechanger.helloWorld",
-				"title": "Hello World"
+				"command": "casechanger.ChangeCase",
+				"title": "ChangeCase"
 			}
-		]
+		],
+		"menus": {
+			"editor/context": [
+				{
+					"command": "casechanger.ChangeCase",
+					"group": "mygroup@1",
+					"when": "editorHasSelection"
+				}
+			]
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
