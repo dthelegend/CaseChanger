@@ -1,7 +1,7 @@
 {
 	"name": "casechanger",
 	"displayName": "CaseChanger",
-	"description": "It changes the case of selected case to a different case.",
+	"description": "It changes the case of selected text to a different case.",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.49.0"
