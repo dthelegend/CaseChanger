@@ -10,22 +10,98 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:casechanger.ChangeCase"
+		"onCommand:casechanger.camelCase",
+		"onCommand:casechanger.PascalCase",
+		"onCommand:casechanger.snake_case",
+		"onCommand:casechanger.SCREAMING_SNAKE_CASE",
+		"onCommand:casechanger.train-case",
+		"onCommand:casechanger.SCREAMING-TRAIN-CASE",
+		"onCommand:casechanger.cRaZyCaSe"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "casechanger.ChangeCase",
-				"title": "ChangeCase"
+				"command": "casechanger.camelCase",
+				"title": "Change to camelCase"
+			},
+			{
+				"command": "casechanger.PascalCase",
+				"title": "Change to PascalCase"
+			},
+			{
+				"command": "casechanger.snake_case",
+				"title": "Change to snake_case"
+			},
+			{
+				"command": "casechanger.SCREAMING_SNAKE_CASE",
+				"title": "Change to SCREAMING_SNAKE_CASE"
+			},
+			{
+				"command": "casechanger.train-case",
+				"title": "Change to train-case"
+			},
+			{
+				"command": "casechanger.SCREAMING-TRAIN-CASE",
+				"title": "Change to SCREAMING-TRAIN-CASE"
+			},
+			{
+				"command": "casechanger.cRaZyCaSe",
+				"title": "Change to cRaZy CaSe"
 			}
 		],
 		"menus": {
+			"commandPalette": [
+				{
+				  "command": "casechanger.camelCase",
+				  "when": "editorHasSelection"
+				},
+				{
+					"command": "casechanger.PascalCase",
+					"when": "editorHasSelection"
+				},
+				{
+					"command": "casechanger.snake_case",
+					"alt": "casechanger.SCREAMING_SNAKE_CASE",
+					"when": "editorHasSelection"
+				},
+				{
+					"command": "casechanger.train-case",
+					"alt": "casechanger.SCREAMING-TRAIN-CASE",
+					"when": "editorHasSelection"
+				},
+				{
+					"command": "casechanger.cRaZyCaSe",
+					"when": "editorHasSelection"
+				}
+			],
 			"editor/context": [
 				{
-					"command": "casechanger.ChangeCase",
-					"group": "mygroup@1",
-					"when": "editorHasSelection"
+					"command": "casechanger.camelCase",
+					"when": "editorHasSelection",
+					"group": "CaseChange@1"
+				},
+				{
+					"command": "casechanger.PascalCase",
+					"when": "editorHasSelection",
+					"group": "CaseChange@2"
+				},
+				{
+					"command": "casechanger.snake_case",
+					"alt": "casechanger.SCREAMING_SNAKE_CASE",
+					"when": "editorHasSelection",
+					"group": "CaseChange@3"
+				},
+				{
+					"command": "casechanger.train-case",
+					"alt": "casechanger.SCREAMING-TRAIN-CASE",
+					"when": "editorHasSelection",
+					"group": "CaseChange@4"
+				},
+				{
+					"command": "casechanger.cRaZyCaSe",
+					"when": "editorHasSelection",
+					"group": "CaseChange@5"
 				}
 			]
 		}
